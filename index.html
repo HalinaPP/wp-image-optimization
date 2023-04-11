@@ -10,83 +10,9 @@
         object-fit: cover;
       }
     </style>
+    <script type="text/javascript" src="./index.js"></script>
   </head>
-  <body>
-    <picture>
-      <source
-        type="image/webp"
-        srcset="
-          images/sharp/image1-w320.webp   320w,
-          images/sharp/image1-w768.webp   768w,
-          images/sharp/image1-w1024.webp 1024w,
-          images/sharp/image1-w1920.webp
-        "
-        loading="lazy"
-      />
-      <source
-        type="image/jpeg"
-        loading="lazy"
-        srcset="
-          images/sharp/image1-w320.jpeg   320w,
-          images/sharp/image1-w768.jpeg   768w,
-          images/sharp/image1-w1024.jpeg 1024w,
-          images/sharp/image1-w1920.jpeg
-        "
-      />
-      <img src=" images/sharp/image1-w1920.jpeg" alt="" />
-    </picture>
-    <picture>
-      <source
-        type="image/webp"
-        srcset="
-          images/sharp/image2-w320.webp   320w,
-          images/sharp/image2-w768.webp   768w,
-          images/sharp/image2-w1024.webp 1024w,
-          images/sharp/image2-w1920.webp
-        "
-        loading="lazy"
-      />
-      <source
-        type="image/jpeg"
-        loading="lazy"
-        srcset="
-          images/sharp/image2-w320.jpeg   320w,
-          images/sharp/image2-w768.jpeg   768w,
-          images/sharp/image2-w1024.jpeg 1024w,
-          images/sharp/image2-w1920.jpeg
-        "
-      />
-      <img src=" images/sharp/image2-w1920.jpeg" alt="" />
-    </picture>
-    <picture>
-      <source
-        type="image/webp"
-        srcset="
-          images/sharp/image3-w320.webp   320w,
-          images/sharp/image3-w768.webp   768w,
-          images/sharp/image3-w1024.webp 1024w,
-          images/sharp/image3-w1920.webp
-        "
-        loading="lazy"
-      />
-      <source
-        type="image/jpeg"
-        loading="lazy"
-        srcset="
-          images/sharp/image3-w320.jpeg   320w,
-          images/sharp/image3-w768.jpeg   768w,
-          images/sharp/image3-w1024.jpeg 1024w,
-          images/sharp/image3-w1920.jpeg
-        "
-      />
-      <img src=" images/sharp/image3-w1920.jpeg" alt="" />
-    </picture>
-    <!--- <img src="images/image4.jpeg" alt="" loading="lazy" />
-    <img src="images/image5.jpeg" alt="" loading="lazy" />
-    <img src="images/image6.jpeg" alt="" loading="lazy" />
-    <img src="images/image7.jpeg" alt="" loading="lazy" />
-    <img src="images/image8.jpeg" alt="" loading="lazy" />
-    <img src="images/image9.jpeg" alt="" loading="lazy" />
-    <img src="images/image10.jpeg" alt="" loading="lazy" />-->
+  <body onload="loadImages();">
+    <div id="pictures"></div>
   </body>
 </html>
