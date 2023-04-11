@@ -19,7 +19,7 @@ const resize = (width, image) => {
       fit: sharp.fit.inside,
       withoutEnlargement: true
     })
-    .toFormat('webp')
+    .webp()
     .toFile(sharpedWebImagePath);
 
   sharp(inputImagePath)
@@ -27,7 +27,7 @@ const resize = (width, image) => {
       fit: sharp.fit.inside,
       withoutEnlargement: true
     })
-    .toFormat('jpeg')
+    .jpeg({ quality: 80 })
     .toFile(sharpedImagePath);
 };
 
